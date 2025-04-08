@@ -1,0 +1,15 @@
+# .github/workflows/basic.yml
+name: Hello and Bye Workflow
+
+on: workflow_dispatch  #Manually trigger the workflow from GitHub UI
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest  # ✅ Uses Ubuntu runner
+
+    steps:
+      - name: Step 1 - Say Hello
+        run: echo "👋 Hello, World!"
+
+      - name: Step 2 - Say Bye
+        run: echo "👋 Bye!"
